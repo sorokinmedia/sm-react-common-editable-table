@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/.eslintrc
+/LICENSE
+/examples/
+/src/
+/.gitignore
+/package.json
+/yarn.lock
+/README.md
+/package-lock.json
+/node_modules/
+/.babelrc
+/lib/
+/yarn-error.log
+/rollup.config.js
