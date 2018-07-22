@@ -6815,6 +6815,10 @@ slice-ansi@1.0.0:
   dependencies:
     is-fullwidth-code-point "^2.0.0"
 
+sm-react-common-uikit@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/sm-react-common-uikit/-/sm-react-common-uikit-1.0.6.tgz#ddb9b0b923954eab274259eab1cddf420a3d1a07"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"

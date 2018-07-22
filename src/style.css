@@ -1,0 +1,5 @@
+/* prevent jumping */
+.sf-editable-table .form-control {
+    margin-top: -7px;
+    margin-bottom: -7px;
+}
