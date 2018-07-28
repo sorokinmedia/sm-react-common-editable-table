@@ -5,18 +5,18 @@
 	"main": "dist/index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/magarampage/sm-react-common-editable-table.git"
+		"url": "git+https://github.com/sorokinmedia/sm-react-common-editable-table.git"
 	},
 	"keywords": [
 		"react",
 		"components"
 	],
-	"author": "magarampage",
+	"author": "sorokinmedia",
 	"license": "BSD-3-Clause",
 	"bugs": {
-		"url": "https://github.com/magarampage/sm-react-common-editable-table/issues"
+		"url": "https://github.com/sorokinmedia/sm-react-common-editable-table/issues"
 	},
-	"homepage": "https://github.com/magarampage/sm-react-common-editable-table#readme",
+	"homepage": "https://github.com/sorokinmedia/sm-react-common-editable-table#readme",
 	"peerDependencies": {
 		"prop-types": "^15.6.2",
 		"react": "^16.0.0",
