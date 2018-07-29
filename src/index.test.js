@@ -13,7 +13,7 @@ function setup(customProps, lifeCycle = false) {
 			name: 'name',
 			title: 'title',
 			value: 'value',
-			constant: true
+			constant: false
 		}],
 		...customProps
 	}
@@ -55,6 +55,44 @@ describe('EditableTable component', () => {
 	it('should call setstate inside cDm', () => {
 		const { container, props } = setup()
 		expect(container.state('fields')).toEqual(props.fields)
+	})
+	it('should call renderer', () => {
+		const { container } = setup({
+			fields: [{
+				name: 'name',
+				title: 'title',
+				value: 'value',
+				constant: true
+			}]
+		})
+		container.setState({ activeField: 'name' })
+		container.update()
+		expect(container.find('tr td').last().text()).toEqual('value')
+	})
+
+	it('should call component', () => {
+		const { container } = setup()
+		container.setState({ activeField: 'name' })
+		container.update()
+		expect(container.find('tr td').last().find('t').exists()).toEqual(true)
+		const instance = container.instance()
+		const change = jest.spyOn(instance, 'handleChange').mockImplementation(() => true)
+		container.find('tr td').last().find('t').simulate('change')
+		container.update()
+		instance.forceUpdate()
+		expect(change).toHaveBeenCalled()
+	})
+
+	it('should call handleChange within component', () => {
+		const { container } = setup()
+		container.setState({ activeField: 'name' })
+		container.update()
+		const instance = container.instance()
+		const change = jest.spyOn(instance, 'handleChange').mockImplementation(() => true)
+		container.find('tr td').last().find('t').simulate('change')
+		container.update()
+		instance.forceUpdate()
+		expect(change).toHaveBeenCalled()
 	})
 })
 
