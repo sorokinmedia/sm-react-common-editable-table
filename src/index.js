@@ -2,10 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { Input } from 'sm-react-common-uikit';
 
-
 const defaultComponent = props => <Input {...props} />;
 
 const defaultRenderer = value => value;
+
+export SelectComponent from "./SelectComponent";
 
 export default class EditableTable extends Component {
 	static propTypes = {
