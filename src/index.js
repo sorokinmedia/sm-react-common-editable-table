@@ -73,7 +73,7 @@ export default class EditableTable extends Component {
 							<tr key={name}>
 								<th width="30%">{title}</th>
 								<td
-									onClick={() => name === activeField ? null : this.this.setActive(name)}
+									onClick={() => name === activeField ? null : this.setActive(name)}
 									width="70%"
 								>
 									{this.isActive(name) && !constant && isEditable ?
