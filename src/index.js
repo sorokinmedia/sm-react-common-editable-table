@@ -54,6 +54,8 @@ export default class EditableTable extends Component {
 
 	render() {
 		// eslint-disable-next-line prefer-destructuring
+		const { isEditable } = this.props;
+		const { activeField } = this.state;
 		const onBlur = this.onBlur;
 		const inputProps = { autoFocus: 'autofocus', onBlur };
 		return (
@@ -71,10 +73,10 @@ export default class EditableTable extends Component {
 							<tr key={name}>
 								<th width="30%">{title}</th>
 								<td
-									onClick={() => this.setActive(name)}
+									onClick={() => name === activeField ? null : this.this.setActive(name)}
 									width="70%"
 								>
-									{this.isActive(name) && !constant ?
+									{this.isActive(name) && !constant && isEditable ?
 										component({
 											value,
 											inputProps,
