@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
-import Alert from '../lib';
+import Alert, { SelectComponent } from '../src';
 
 class App extends Component {
 

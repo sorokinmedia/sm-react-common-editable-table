@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-class SelectComponent extends Component {
+export default class SelectComponent extends Component {
 	static propTypes = {
 		inputProps: PropTypes.object,
 		onChange: PropTypes.func,
@@ -36,6 +36,3 @@ class SelectComponent extends Component {
 	}
 }
 
-export default connect((state, props) => ({
-	options: props.options ? props.options : state[props.dataKey].data || []
-}), {})(SelectComponent);
