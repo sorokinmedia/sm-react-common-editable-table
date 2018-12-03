@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
-import Alert, { SelectComponent } from '../src';
+import Alert, { SelectComponent } from '../lib';
 
 class App extends Component {
 
 	render() {
 		return (
 			<div>
-				<Alert showAlert="Error" />
+				<SelectComponent/>
 			</div>
 		)
 	}

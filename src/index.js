@@ -6,7 +6,7 @@ const defaultComponent = props => <Input {...props} />;
 
 const defaultRenderer = value => value;
 
-export SelectComponent from "./SelectComponent";
+export SelectComponent from './SelectComponent';
 
 export default class EditableTable extends Component {
 	static propTypes = {
