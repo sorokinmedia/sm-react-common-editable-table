@@ -23,6 +23,20 @@
 		"sm-react-common-uikit": "^1.0.6",
 		"react-dom": "^16.0.0"
 	},
+	"resolutions": {
+		"ansi-regex": "^6.0.1",
+		"braces": "^2.3.1",
+		"glob-parent": "^5.1.2",
+		"is-svg": "^4.2.1",
+		"js-yaml": "^3.13.0",
+		"mem": "^4.0.0",
+		"merge": "^2.1.1",
+		"node-notifier": "^8.0.1",
+		"ws": "^5.2.2",
+		"y18n": "^3.2.2",
+		"yargs-parser": "^13.1.1",
+		"color-string": "^1.5.5"
+	},
 	"devDependencies": {
 		"babel-core": "^6.26.0",
 		"babel-eslint": "^8.2.3",
